@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Calcul Mental</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-96">
+        <h1 class="text-2xl font-bold mb-4 text-center">Jeu de Calcul Mental</h1>
+        <div id="difficultySelection" class="mb-4">
+            <h2 class="text-xl mb-2">Choisissez la difficulté :</h2>
+            <button class="difficulty-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2 w-full" data-difficulty="easy">Facile</button>
+            <button class="difficulty-btn bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mb-2 w-full" data-difficulty="medium">Moyen</button>
+            <button class="difficulty-btn bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mb-2 w-full" data-difficulty="hard">Difficile</button>
+        </div>
+        <div id="game" class="hidden">
+            <h2 id="question" class="text-xl mb-4"></h2>
+            <div id="answers" class="grid grid-cols-2 gap-4"></div>
+            <p id="score" class="mt-4 text-lg">Score: 0</p>
+            <p id="timer" class="mt-4 text-lg text-red-500">Temps restant: 45s</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
